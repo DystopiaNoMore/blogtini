@@ -46,32 +46,32 @@ let cfg = {
   user: '',
   repo: '',
   branch: 'main', // xxxx autodetect or 'master'
-  theme: '../theme/future-imperfect/index.js',
+//  theme: '../theme/future-imperfect/index.js',
   theme_css: 'https://blogtini.com/css/blogtini.css', // can be relative url
-  title: 'welcome to my blog',
-  attribution: "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://blogtini.com/'  target='_blank' rel='noopener'>blogtini.com</a>",
-  img_site: '',
-  posts_per_page: 10,
-  site_header: 'https://traceypooh.github.io/blogtini/img/blogtini.png', // xxx
-  reading_time: true,
-  summary_length: 500,
-  menu: {
+//  title: 'welcome to my blog',
+//  attribution: "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://blogtini.com/'  target='_blank' rel='noopener'>blogtini.com</a>",
+//  img_site: '',
+  posts_per_page: 1000,
+//  site_header: 'https://traceypooh.github.io/blogtini/img/blogtini.png', // xxx
+//  reading_time: true,
+//  summary_length: 500,
+//  menu: {
     main: [], // xxx add some defaults
   },
   header: {
-    share: true,
+//    share: true,
     search: true,
-    language: false,
-    theme: true,
+//    language: false,
+//    theme: true,
   },
-  sidebar: {
-    post_amount: 5,
-    categories: true,
-    categories_by_count: true,
-  },
-  social: {},
-  social_share: ['twitter', 'facebook', 'pinterest', 'email'],
-  view_more_posts_link: '/post/', // xxx
+//  sidebar: {
+//    post_amount: 5,
+//    categories: true,
+//    categories_by_count: true,
+//  },
+//  social: {},
+//  social_share: ['twitter', 'facebook', 'pinterest', 'email'],
+//  view_more_posts_link: '/post/', // xxx
   remove_blur: true,
 }
 
@@ -617,7 +617,7 @@ function create_comment_form(entryId, comments) {
   </div>`
 }
 
-function share_buttons(post) { // xxxxx
+// xxxxx function share_buttons(post) {
   if (!post) {
     // if no post, parse url for ?tags etc and fake
     // post = markdown_to_post(document.querySelector('body').innerHTML, 'xxx')
@@ -758,7 +758,7 @@ function update_sidebar(btpage) {
     )
   }
 
-  if (cfg.sidebar.categories) {
+//  if (cfg.sidebar.categories) {
     const histogram = {}
     for (const cat of Object.keys(state.cats).sort())
       histogram[cat] = state.cats[cat].length

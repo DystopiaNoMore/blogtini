@@ -2,7 +2,27 @@
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>Font Archive running on Blogtini</title><!-- xxx -->
+  <title>Blogtini</title><!-- xxx -->
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- xxx SPA meta & make specific or auto-make page dynaically for any website?? -->
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="twitter:title" content="Blogtini"/><!--xxx-->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="@tracey_pooh"/>
+
+  <meta property="og:title" content="Blogtini"><!--xxx-->
+  <meta property="og:image" content="img/traceymonet.jpg">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://blogtini.com" />
+  <!-- xxx SPA meta & make specific or auto-make page dynaically for any website?? -->
 
   <link href="css/blogtini.css" rel="stylesheet" type="text/css"/>
   <script type="module" src="theme.js"></script>
@@ -10,9 +30,11 @@
 <body class="homepage">
 
 #hello world
-- [demo post #1](fontland/2022-07-Hello-World/index.html)
+- [demo post #1](C:\cygwin64\home\blogtini\fontland\2022-07-Hello-World\index.html)
 
-## Welcome to Font Archive running on Blogtini!
+# Welcome to Font Archive running on Blogtini!
+
+A modern "content first" approach to blogs & websites made entirely from easy to write and human readable `markdown` text files.
 
 ## Overview
 - All your pages and blog posts are in [markdown](https://en.wikipedia.org/wiki/Markdown#Examples) -- this means your content is clean and **just** content.  No formatting mixed into your files.
@@ -77,12 +99,33 @@ sitemap.xml
 ```
 You can add days into the filenames/urls, too:
 ```
-
 2023-05-04-may-the-fourth-was-wild-this-year/index.html
 2022-12-25-christmas-with-family/index.html
 index.html
 theme.js
 sitemap.xml
 ```
+- Create a `sitemap.xml` with contents like:
+```xml
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url><loc>/index.html</loc></url>
+
+  <url><loc>/2023-05-may-the-fourth-was-wild-this-year/</loc></url>
+  <url><loc>/2022-12-christmas-with-family/</loc></url>
+</urlset>
+```
+- Reload your simple web server browser url to see the site
+- You can create a free https://github.com/ (new account if needed) and new repository and add your files there
+- xxxxx document sitemap auto-generator setup & explain sitemap importance
+- xxxxx document setting up top-level `index.html` file
+```
+
+
+
+## More info
+- https://traceypooh.github.io/slides/dweb-2023 (tracey talk at https://dwebcamp.org )
+
+## Example Blog <i class="fa fa-angle-down"></i>
 
 </body>
